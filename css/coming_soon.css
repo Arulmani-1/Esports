@@ -1,0 +1,138 @@
+/* COMING SOON PAGE STYLES */
+
+.coming-soon-hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.coming-soon-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('../assets/images/snow_hooded_figure.png') center/cover no-repeat;
+  filter: contrast(1.1) brightness(1.2);
+  z-index: 0;
+  animation: subtleZoom 20s infinite alternate linear;
+}
+
+@keyframes subtleZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.05); }
+}
+
+.coming-soon-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.7) 100%);
+  z-index: 1;
+}
+
+.coming-soon-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.coming-soon-title {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #111;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+.decorative-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto 40px auto;
+}
+
+.decorative-line .line {
+  flex: 1;
+  height: 1px;
+  background-color: #333;
+}
+
+.decorative-line .ornament {
+  margin: 0 15px;
+  color: #333;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 5px;
+}
+
+/* Let's style the ornament to look like the geometric diamond pattern in the image */
+.decorative-line .ornament::before,
+.decorative-line .ornament::after {
+  content: '\25C6'; /* Diamond shape */
+  font-size: 0.8rem;
+}
+
+.countdown-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.countdown-item .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #111;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+.countdown-item span {
+  font-family: var(--font-subheading);
+  font-size: 1rem;
+  color: #333;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .coming-soon-title {
+    font-size: 3rem;
+  }
+  
+  .countdown-item .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  
+  .decorative-line {
+    max-width: 250px;
+  }
+}
