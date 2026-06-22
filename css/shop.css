@@ -1,19 +1,54 @@
 /* SHOP PAGE STYLES */
 
 .shop-hero {
-  padding: 150px 5% 50px;
-  background: linear-gradient(135deg, rgba(11,11,11,0.85) 0%, rgba(17,17,17,0.95) 100%), url('../assets/images/gaming_gear.jpg') center/cover no-repeat;
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.shop-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('../assets/images/gaming_gear.jpg') center/cover no-repeat;
+  filter: brightness(0.6);
+  animation: bgZoom 15s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+@keyframes bgZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.shop-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
 }
 
-.shop-hero h1 {
-  font-size: 3.5rem;
-  text-shadow: var(--glow-red);
+.shop-title {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  letter-spacing: 15px;
+  color: var(--white);
+  text-shadow: 0 10px 20px rgba(0,0,0,0.8);
+  opacity: 0;
+  transform: scale(0.9);
+  animation: textReveal 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 0.3s;
+}
+
+@keyframes textReveal {
+  0% { opacity: 0; transform: scale(0.9) translateY(30px); letter-spacing: 5px; }
+  100% { opacity: 1; transform: scale(1) translateY(0); letter-spacing: 15px; }
 }
 
 .shop-layout {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 3fr 1fr;
   gap: 40px;
   padding: 50px 5%;
 }

@@ -38,7 +38,7 @@
           loader.style.display = 'none';
         }, 500);
       }
-    }, 3000); // 3 seconds delay
+    }, 0); // 0 seconds delay
   };
 
   if (document.readyState === 'complete') {
