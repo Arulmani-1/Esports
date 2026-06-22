@@ -1,0 +1,265 @@
+/* CONTACT PAGE STYLES */
+
+/* CONTACT HERO - ANIMATED LIKE ABOUT PAGE */
+.contact-hero {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+.contact-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('../assets/images/command_center.jpg') center/cover no-repeat;
+  filter: brightness(0.6);
+  animation: bgZoom 15s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+@keyframes bgZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  letter-spacing: 15px;
+  color: var(--white);
+  text-shadow: 0 10px 20px rgba(0,0,0,0.8);
+  opacity: 0;
+  transform: scale(0.9);
+  animation: textReveal 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 0.3s;
+}
+
+@keyframes textReveal {
+  0% { opacity: 0; transform: scale(0.9) translateY(30px); letter-spacing: 5px; }
+  100% { opacity: 1; transform: scale(1) translateY(0); letter-spacing: 15px; }
+}
+
+/* CONTACT LAYOUT - OVERLAPPING STACKLY THEME */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  padding: 0 5% 80px;
+  position: relative;
+  z-index: 10;
+  margin-top: -20vh; /* Pulled up to overlap the hero banner */
+}
+
+.stackly-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stackly-card {
+  background-color: #111c2a;
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stackly-card .icon-box {
+  background-color: #1a293b;
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00e6b8; /* Teal accent */
+  font-size: 1.2rem;
+}
+
+.stackly-card h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.stackly-card p {
+  color: #a0aec0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* CONTACT FORM - STACKLY THEME */
+.stackly-form-container {
+  background-color: #111c2a;
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stackly-form-container h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.stackly-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-row {
+  display: grid;
+  gap: 20px;
+}
+
+.input-row.split {
+  grid-template-columns: 1fr 1fr;
+}
+
+.stackly-form input, .stackly-form textarea {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #1a293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.stackly-form input::placeholder, .stackly-form textarea::placeholder {
+  color: #64748b;
+}
+
+.stackly-form input:focus, .stackly-form textarea:focus {
+  outline: none;
+  border-color: #00e6b8;
+  box-shadow: 0 0 0 1px #00e6b8;
+}
+
+.btn-stackly {
+  background-color: #00e6b8;
+  color: #0b1320;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.btn-stackly:hover {
+  background-color: #00ffcc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 230, 184, 0.3);
+}
+
+/* MAP SECTION - STACKLY THEME */
+.visit-office {
+  background-color: #0b1320;
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.visit-office h2 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.visit-office p {
+  color: #a0aec0;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.map-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* FAQ SECTION */
+.faq-section {
+  background: var(--bg-secondary);
+  padding: 80px 5%;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--font-subheading);
+  font-size: 1.1rem;
+  color: var(--white);
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.faq-answer {
+  padding: 0 20px 20px;
+  color: var(--gray);
+  display: none;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+/* Very basic JS handled toggle via CSS trick for demo or we'll add logic to main.js, 
+but standard CSS hover works for simple reveal if needed, though click is better */
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-item.active .faq-question {
+  color: var(--neon-orange);
+}
+
+@media (max-width: 768px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .input-group { grid-template-columns: 1fr; }
+}

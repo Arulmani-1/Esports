@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Pro Arena | 404 Not Found</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/loading.css">\n  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/404.css">
+</head>
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_0.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <!-- Full Global Header -->
+  <div id="navbar-placeholder"></div>
+
+  <section class="error-page">
+    <div class="error-overlay"></div>
+    <div class="error-content">
+      <h1 class="error-number">404</h1>
+      <h2 class="error-subtitle">Go Back To The Shadow!</h2>
+      
+      <div class="ornate-separator">
+        <div class="diamond"></div>
+        <div class="diamond main"></div>
+        <div class="diamond"></div>
+      </div>
+
+      <p class="error-desc">The page you are looking for no longer exists. Perhaps you can return back to the site's<br>homepage and see if you can find what you are looking for.</p>
+      
+      <a href="index.html" class="btn error-btn">GO BACK</a>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Global JS -->
+  <script src="js/loading.js"></script>\n  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll('.error-number, .error-subtitle');
+      elements.forEach(el => {
+        const text = el.textContent;
+        el.innerHTML = '';
+        for (let i = 0; i < text.length; i++) {
+          const char = text[i] === ' ' ? '&nbsp;' : text[i];
+          const span = document.createElement('span');
+          span.innerHTML = char;
+          span.style.animationDelay = `${(text.length - 1 - i) * 0.08}s`;
+          span.classList.add('rtl-anim');
+          el.appendChild(span);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

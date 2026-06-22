@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Pro Arena | Register</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/loading.css">\n  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_14.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="auth-wrapper" id="particles-js">
+    <div class="auth-box auth-box-register" data-aos="zoom-in">
+      <div class="auth-header">
+        <h2 style="text-shadow:var(--glow-orange);">Join The <span>Arena</span></h2>
+        <p>Create your new gamer profile</p>
+      </div>
+      
+      <form class="auth-form" onsubmit="event.preventDefault(); alert('Registration Successful!');">
+        <div class="auth-form-grid">
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Full Name" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-gamepad"></i>
+            <input type="text" placeholder="Username" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="tel" placeholder="Phone Number" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+        </div>
+        
+        <div class="auth-options" style="justify-content:center; margin-top:10px;">
+          <label class="remember-me">
+            <input type="checkbox" required> I agree to the <a href="#" style="color:var(--neon-orange);">Terms of Service</a> & <a href="#" style="color:var(--neon-orange);">Privacy Policy</a>
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" style="width:100%; border-radius:5px; background:var(--neon-orange); border-color:var(--neon-orange);">Create Account</button>
+      </form>
+      
+      <div class="auth-footer">
+        Already have an account? <a href="login.html" style="color:var(--neon-orange);">Login Here</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n  <script src="js/main.js"></script>
+</body>
+</html>

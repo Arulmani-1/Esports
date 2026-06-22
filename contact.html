@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Contact Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/loading.css">\n
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_4.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="contact-hero">
+    <div class="contact-bg"></div>
+    <div class="contact-content">
+      <h1 class="contact-title">C O N T A C T &nbsp;&nbsp; U S</h1>
+    </div>
+  </section>
+
+  <section class="contact-layout">
+    <!-- Contact Info -->
+    <div class="stackly-contact-info" data-aos="fade-right">
+      <div class="stackly-card">
+        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <h4>ARENA HEADQUARTERS</h4>
+          <p>1337 Gamer Blvd, Suite 420,<br>Los Angeles, CA 90015</p>
+        </div>
+      </div>
+
+      <div class="stackly-card">
+        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+        <div>
+          <h4>EMAIL SUPPORT</h4>
+          <p>support@esportsproarena.com<br>partners@esportsproarena.com</p>
+        </div>
+      </div>
+
+      <div class="stackly-card">
+        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+        <div>
+          <h4>PHONE</h4>
+          <p>+1 (800) 123-4567<br>Mon-Fri, 9am - 6pm PST</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="stackly-form-container" data-aos="fade-left">
+      <h2>REQUEST A DEMO OR CONSULTATION</h2>
+      <form class="stackly-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+        <div class="input-row full-width">
+          <input type="text" placeholder="Full Name" required>
+        </div>
+        <div class="input-row split">
+          <input type="email" placeholder="Email Address" required>
+          <input type="tel" placeholder="Phone Number" required>
+        </div>
+        <div class="input-row full-width">
+          <input type="text" placeholder="Organization / Company" required>
+        </div>
+        <div class="input-row full-width">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-stackly">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="visit-office" data-aos="fade-up">
+    <h2>Visit Our Arena</h2>
+    <p>Located in the heart of downtown Los Angeles, next to the Convention Center.</p>
+
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.672952565103!2d-118.27110188478494!3d34.03939638060935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7c7a31b67f1%3A0x6b976b0521e8e2d4!2sLos%20Angeles%20Convention%20Center!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+        width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <p>Need Answers?</p>
+    </div>
+
+    <div class="faq-container" data-aos="fade-up">
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">How do I register my team for a tournament? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer">You can register your team by navigating to the Tournaments page, selecting an active
+          tournament, and filling out the registration form. Ensure your captain submits the correct contact email.
+        </div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">What payment methods are accepted in the shop? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer">We accept all major credit cards (Visa, Mastercard, Amex), PayPal, and select
+          cryptocurrencies for global accessibility.</div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">How are the global rankings calculated? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer">Rankings are calculated based on a proprietary Elo system that factors in tournament
+          placements, match win rates, and opponent strength over a rolling 12-month period.</div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">Can I appeal a ban on the community forum? <i class="fas fa-plus"></i></div>
+        <div class="faq-answer">Yes, you can submit an appeal ticket via the support email listed on this contact page.
+          Please include your username and the reason for the ban.</div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n
+  <script src="js/main.js"></script>
+</body>
+
+</html>

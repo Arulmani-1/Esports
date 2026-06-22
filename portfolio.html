@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Pro Arena | Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/loading.css">\n  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_13.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="portfolio-hero">
+    <div class="portfolio-bg"></div>
+    <div class="portfolio-content">
+      <h1 class="portfolio-title">MEDIA GALLERY</h1>
+    </div>
+  </section>
+
+  <section class="section-padding portfolio-layout">
+    <div class="portfolio-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="tournaments">Tournaments</button>
+      <button class="filter-btn" data-filter="highlights">Highlights</button>
+      <button class="filter-btn" data-filter="teams">Teams</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+
+    <!-- Masonry Gallery Grid -->
+    <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+      
+      <a href="assets/images/command_center.jpg" class="gallery-item large filter-item tournaments">
+        <img src="assets/images/single_knight.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-trophy"></i>
+          <h4>World Finals Stage</h4>
+        </div>
+      </a>
+
+      <a href="assets/images/gaming_gear.jpg" class="gallery-item filter-item events">
+        <img src="assets/images/four_knights.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-camera"></i>
+          <h4>Crowd Hype</h4>
+        </div>
+      </a>
+
+      <a href="assets/images/stadium_arena.jpg" class="gallery-item filter-item teams">
+        <img src="assets/images/command_center.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-users"></i>
+          <h4>Team Setup</h4>
+        </div>
+      </a>
+
+      <a href="assets/images/single_knight.jpg" class="gallery-item filter-item highlights">
+        <img src="assets/images/gaming_gear.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-play-circle"></i>
+          <h4>Clutch Moment</h4>
+        </div>
+      </a>
+
+      <a href="assets/images/four_knights.jpg" class="gallery-item large filter-item tournaments">
+        <img src="assets/images/stadium_arena.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-trophy"></i>
+          <h4>Championship Cup</h4>
+        </div>
+      </a>
+
+      <a href="assets/images/command_center.jpg" class="gallery-item filter-item events">
+        <img src="assets/images/single_knight.jpg" alt="Gallery Image">
+        <div class="gallery-overlay">
+          <i class="fas fa-camera"></i>
+          <h4>Lan Party</h4>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal (handled by main.js) -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <div class="lightbox-content">
+      <i class="fas fa-times lightbox-close"></i>
+      <img src="" alt="Lightbox Image" id="lightbox-img">
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n  <script src="js/main.js"></script>
+</body>
+</html>

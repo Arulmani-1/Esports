@@ -1,0 +1,203 @@
+:root {
+    --bg-color: #050505;
+    --text-color: #e0e0e0;
+    --accent: #ffffff;
+    --nav-bg: rgba(5, 5, 5, 0.85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+/* Film Grain / Noise Overlay */
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Hidden Navigation */
+.hidden-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2s ease-in-out, backdrop-filter 3s ease;
+    z-index: 100;
+}
+
+.nav-trigger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    cursor: none;
+    pointer-events: auto;
+    z-index: 101;
+}
+
+.nav-trigger .dot {
+    width: 3px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transition: background 3s ease, transform 3s ease, box-shadow 3s ease;
+}
+
+/* Hover reveal for navigation */
+.nav-trigger:hover ~ .hidden-nav,
+.hidden-nav:hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav-trigger:hover .dot {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transform: scale(2);
+}
+
+.nav-links {
+    list-style: none;
+    text-align: center;
+    transform: translateY(20px);
+    transition: transform 3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-trigger:hover ~ .hidden-nav .nav-links,
+.hidden-nav:hover .nav-links {
+    transform: translateY(0);
+}
+
+.nav-links li {
+    margin: 40px 0;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 3s forwards;
+    animation-play-state: paused;
+}
+
+.nav-trigger:hover ~ .hidden-nav .nav-links li,
+.hidden-nav:hover .nav-links li {
+    animation-play-state: running;
+}
+
+.nav-links li:nth-child(1) { animation-delay: 0.5s; }
+.nav-links li:nth-child(2) { animation-delay: 1.5s; }
+.nav-links li:nth-child(3) { animation-delay: 2.5s; }
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+    opacity: 0.3;
+    transition: opacity 2s ease, letter-spacing 3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    letter-spacing: 0.9em;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+}
+
+.reveal-area {
+    text-align: center;
+    padding: 150px;
+    cursor: none;
+}
+
+.subtle-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    opacity: 0.15;
+    transition: opacity 4s ease, transform 5s ease;
+    transform: translateY(0);
+    text-transform: uppercase;
+}
+
+.hidden-title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    letter-spacing: 1.2rem;
+    opacity: 0;
+    transform: scale(0.97) translateY(10px);
+    filter: blur(15px);
+    transition: opacity 4s ease, transform 5s ease, filter 4s ease;
+    margin-top: 40px;
+    color: var(--accent);
+}
+
+/* Hover reveal in the center */
+.reveal-area:hover .subtle-text {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-area:hover .hidden-title {
+    opacity: 0.7;
+    transform: scale(1) translateY(0);
+    filter: blur(0px);
+}
+
+/* Subtle Cursor Glow */
+.cursor-glow {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 60%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    transition: top 1s cubic-bezier(0.16, 1, 0.3, 1), left 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

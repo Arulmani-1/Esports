@@ -1,0 +1,91 @@
+/* PAGES PAGE STYLES */
+
+.pages-hero {
+  padding: 150px 5% 50px;
+  background: linear-gradient(135deg, rgba(11,11,11,0.85) 0%, rgba(17,17,17,0.95) 100%), url('../assets/images/stadium_arena.jpg') center/cover no-repeat;
+  text-align: center;
+}
+
+.pages-hero h1 {
+  font-size: 3.5rem;
+  text-shadow: var(--glow-purple);
+}
+
+.pages-hero p {
+  color: var(--neon-orange);
+  font-family: var(--font-subheading);
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+/* PREMIUM CARD GRID */
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 50px 5%;
+}
+
+.page-card {
+  background: var(--bg-secondary);
+  border: var(--glass-border);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.page-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, var(--crimson-red) 0%, var(--purple-glow) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.page-card:hover::before {
+  opacity: 0.1;
+}
+
+.page-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--crimson-red);
+  box-shadow: var(--glow-red);
+}
+
+.page-card i {
+  font-size: 4rem;
+  color: var(--white);
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.page-card:hover i {
+  transform: scale(1.2);
+  color: var(--crimson-red);
+}
+
+.page-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.page-card p {
+  color: var(--gray);
+  margin-bottom: 25px;
+  font-size: 0.9rem;
+}
+
+.page-card .btn {
+  width: 100%;
+}

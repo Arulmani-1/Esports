@@ -1,0 +1,137 @@
+/* 404 PAGE STYLES */
+
+.error-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/images/gaming_gear.jpg') center/cover no-repeat;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.error-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.error-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.error-number {
+  font-family: var(--font-heading);
+  font-size: 15rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 10px;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.error-subtitle {
+  font-family: var(--font-subheading);
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 20px;
+  text-transform: none;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.ornate-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0 40px;
+  position: relative;
+}
+
+.ornate-separator::before, .ornate-separator::after {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.diamond {
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(45deg);
+}
+
+.diamond.main {
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+}
+
+.error-desc {
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 650px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.error-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--white);
+  padding: 15px 40px;
+  font-family: var(--font-subheading);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.error-btn:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+@media (max-width: 992px) {
+  .error-number { font-size: 10rem; }
+  .error-subtitle { font-size: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .error-number { font-size: 6rem; }
+  .error-subtitle { font-size: 2rem; }
+  .error-desc { font-size: 1rem; }
+}
+
+/* RTL Letter Animation */
+.rtl-anim {
+  opacity: 0;
+  display: inline-block;
+  animation: reveal-rtl 0.5s ease-out forwards;
+}
+
+@keyframes reveal-rtl {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

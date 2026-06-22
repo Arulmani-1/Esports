@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Void</title>
+    <link rel="stylesheet" href="css/mysterious.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video class="page-bg-video" autoplay loop muted playsinline>
+        <source src="assets/videos/vid_0.mp4" type="video/mp4">
+    </video>
+
+    <div class="noise"></div>
+
+    <nav class="hidden-nav">
+        <ul class="nav-links">
+            <li><a href="#">descend</a></li>
+            <li><a href="#">linger</a></li>
+            <li><a href="#">depart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Trigger is separate to keep hover area at top -->
+    <div class="nav-trigger">
+        <span class="dot"></span>
+    </div>
+
+    <main class="content">
+        <div class="reveal-area">
+            <p class="subtle-text">the surface is still.</p>
+            <h1 class="hidden-title">breathe.</h1>
+        </div>
+
+        <div class="cursor-glow"></div>
+    </main>
+
+    <script>
+        // Subtle cursor glow effect for atmosphere
+        const glow = document.querySelector('.cursor-glow');
+        let mouseX = window.innerWidth / 2;
+        let mouseY = window.innerHeight / 2;
+        let currentX = mouseX;
+        let currentY = mouseY;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        // Use requestAnimationFrame for smooth, delayed following
+        function animateGlow() {
+            // Lerp (linear interpolation) for slow, heavy movement
+            currentX += (mouseX - currentX) * 0.03;
+            currentY += (mouseY - currentY) * 0.03;
+
+            glow.style.left = currentX + 'px';
+            glow.style.top = currentY + 'px';
+
+            requestAnimationFrame(animateGlow);
+        }
+
+        animateGlow();
+    </script>
+</body>
+
+</html>

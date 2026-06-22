@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/loading.css">\n
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_3.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="blog-hero">
+    <div class="blog-hero-content" data-aos="fade-up">
+      <h1>Latest <span>News</span></h1>
+      <p
+        style="color:var(--neon-orange); font-size:1.2rem; font-family:var(--font-subheading); letter-spacing:2px; margin-top:10px;">
+        Esports Insights & Updates</p>
+    </div>
+  </section>
+
+  <div class="blog-layout">
+    <!-- Main Content -->
+    <main>
+      <!-- Featured Post -->
+      <article class="featured-post" data-aos="fade-up">
+        <img src="assets/images/command_center.jpg" alt="Featured Post" class="featured-img">
+        <div class="featured-overlay">
+          <span class="post-category">Tournaments</span>
+          <a href="#">
+            <h2>Pro League Season 5 Announced with Record Prize Pool</h2>
+          </a>
+          <div class="post-meta">
+            <span><i class="fas fa-user"></i> By Admin</span>
+            <span><i class="fas fa-calendar"></i> Oct 12, 2026</span>
+            <span><i class="fas fa-comments"></i> 142 Comments</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Grid -->
+      <div class="blog-grid">
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/images/single_knight.jpg" alt="Blog Post" class="blog-card-img">
+          <div class="blog-card-content">
+            <span class="post-category" style="background:var(--neon-orange);">Gear</span>
+            <a href="#">
+              <h3>Top 5 Gaming Mice for FPS Players in 2026</h3>
+            </a>
+            <p>We review the latest gaming mice hitting the market, testing sensor accuracy and ergonomics.</p>
+            <div class="post-meta"
+              style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
+              <span>Oct 10, 2026</span>
+            </div>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/images/gaming_gear.jpg" alt="Blog Post" class="blog-card-img">
+          <div class="blog-card-content">
+            <span class="post-category" style="background:var(--purple-glow);">Updates</span>
+            <a href="#">
+              <h3>Major Patch Notes Analysis: Meta Shift Expected</h3>
+            </a>
+            <p>Breaking down the massive changes in patch 4.2 and how it will impact competitive play.</p>
+            <div class="post-meta"
+              style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
+              <span>Oct 08, 2026</span>
+            </div>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/images/four_knights.jpg" alt="Blog Post" class="blog-card-img">
+          <div class="blog-card-content">
+            <span class="post-category" style="background:#00E676;">Interviews</span>
+            <a href="#">
+              <h3>Interview with MVP "Shadow" from Team Venom</h3>
+            </a>
+            <p>An exclusive sit-down with the reigning MVP discussing his journey to the top.</p>
+            <div class="post-meta"
+              style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
+              <span>Oct 05, 2026</span>
+            </div>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/images/stadium_arena.jpg" alt="Blog Post" class="blog-card-img">
+          <div class="blog-card-content">
+            <span class="post-category">Tournaments</span>
+            <a href="#">
+              <h3>Regional Qualifiers Recap</h3>
+            </a>
+            <p>A look back at the chaotic regional qualifiers and the underdog teams that made it through.</p>
+            <div class="post-meta"
+              style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
+              <span>Oct 02, 2026</span>
+            </div>
+            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" data-aos="fade-up">
+        <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="page-link active">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="blog-sidebar">
+      <!-- Search Widget -->
+      <div class="sidebar-widget search-widget" data-aos="fade-up">
+        <h4 class="sidebar-title">Search</h4>
+        <form onsubmit="event.preventDefault();">
+          <input type="text" placeholder="Search keywords..." required>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+
+      <!-- Categories Widget -->
+      <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="sidebar-title">Categories</h4>
+        <div class="category-list">
+          <a href="#"><span>Tournaments</span> <span>(45)</span></a>
+          <a href="#"><span>Gear Reviews</span> <span>(28)</span></a>
+          <a href="#"><span>Patch Notes</span> <span>(32)</span></a>
+          <a href="#"><span>Interviews</span> <span>(14)</span></a>
+          <a href="#"><span>Community</span> <span>(56)</span></a>
+        </div>
+      </div>
+
+      <!-- Recent Posts Widget -->
+      <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="sidebar-title">Recent Posts</h4>
+        <div class="recent-post-item">
+          <img src="assets/images/command_center.jpg" alt="Recent">
+          <div class="recent-post-info">
+            <a href="#">
+              <h5>Pro League Season 5 Announced</h5>
+            </a>
+            <span>Oct 12, 2026</span>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <img src="assets/images/single_knight.jpg" alt="Recent">
+          <div class="recent-post-info">
+            <a href="#">
+              <h5>Top 5 Gaming Mice for FPS</h5>
+            </a>
+            <span>Oct 10, 2026</span>
+          </div>
+        </div>
+        <div class="recent-post-item">
+          <img src="assets/images/gaming_gear.jpg" alt="Recent">
+          <div class="recent-post-info">
+            <a href="#">
+              <h5>Major Patch Notes Analysis</h5>
+            </a>
+            <span>Oct 08, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tags Widget -->
+      <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="300">
+        <h4 class="sidebar-title">Popular Tags</h4>
+        <div class="tags-cloud">
+          <a href="#">Esports</a>
+          <a href="#">Gaming</a>
+          <a href="#">Hardware</a>
+          <a href="#">FPS</a>
+          <a href="#">MOBA</a>
+          <a href="#">Streamers</a>
+          <a href="#">Events</a>
+          <a href="#">Update</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n
+  <script src="js/main.js"></script>
+</body>
+
+</html>

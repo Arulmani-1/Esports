@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Esports Pro Arena - Premium Gaming and Esports Platform">
+  <title>Esports Stackly | Home</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/loading.css">\n
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_7.mp4" type="video/mp4">
+  </video>
+
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
+  <!-- Page Loader -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <a href="index.html" class="logo">STACKLY</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="matches.html">Single Match</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="404.html">Coming Soon</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="forum.html">Community</a></li>
+            <li><a href="forum.html">Rankings</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html">Products</a></li>
+          </ul>
+        </li>
+
+        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!-- Mobile Sidebar -->
+  <aside class="mobile-sidebar">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Pages</a></li>
+      <li><a href="index.html">Forum</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Sticky Side Buttons -->
+  <div class="sticky-side-btns">
+    <a href="#" class="side-btn related-btn"><img src="assets/images/command_center.jpg"
+        style="width:20px; height:20px; border-radius:50%; object-fit:cover; margin-right:10px; display:none;">
+      RELATED</a>
+    <a href="shop.html" class="side-btn buy-btn"><i class="fas fa-shopping-cart"></i> BUY NOW</a>
+  </div>
+
+  <!-- Slider Hero Section -->
+  <section class="slider-hero" id="home">
+    <div class="slide active" style="background-image: url('assets/images/four_knights.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">AGE OF THE DRAGON</h1>
+        <div class="ornate-separator">
+          <div class="diamond"></div>
+          <div class="diamond main"></div>
+          <div class="diamond"></div>
+        </div>
+        <p class="slide-subtitle">That is not dead which can eternal lie, and with strange eons even death may
+          die.<br>In his house at R'lyeh, dead Cthulhu waits dreaming.</p>
+        <a href="#" class="btn btn-transparent">BUY THEME</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('assets/images/stadium_arena.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">A NEW HERO RISES</h1>
+        <div class="ornate-separator">
+          <div class="diamond"></div>
+          <div class="diamond main"></div>
+          <div class="diamond"></div>
+        </div>
+        <p class="slide-subtitle">The oldest and strongest emotion of mankind is fear,<br>and the oldest and strongest
+          kind of fear is fear of the unknown.</p>
+        <a href="#" class="btn btn-transparent">BUY THEME</a>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image: url('assets/images/single_knight.jpg');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">THE UNCONQUERED</h1>
+        <div class="ornate-separator">
+          <div class="diamond"></div>
+          <div class="diamond main"></div>
+          <div class="diamond"></div>
+        </div>
+        <p class="slide-subtitle">It seemed to be a sort of monster, or symbol representing a monster,<br>of a form
+          which only a diseased fancy could conceive.</p>
+        <a href="#" class="btn btn-transparent">BUY THEME</a>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-arrow prev-arrow"><i class="fas fa-chevron-left"></i></div>
+    <div class="slider-arrow next-arrow"><i class="fas fa-chevron-right"></i></div>
+
+    <div class="slider-dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </section>
+
+  <!-- Live Tournament Section -->
+  <section class="section-padding live-tournament" id="tournaments">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Global <span>Championship</span></h2>
+      <p>Season 2026</p>
+    </div>
+    <div class="tournament-card" data-aos="zoom-in">
+      <h3>World Final Starts In</h3>
+      <div id="match-countdown"
+        style="display: flex; justify-content: center; gap: 20px; font-size: 2rem; color: var(--white); margin: 20px 0;">
+        <!-- Filled by JS -->
+      </div>
+      <div class="prize-pool">$5,000,000</div>
+      <a href="tournaments.html" class="btn btn-primary">View Bracket</a>
+    </div>
+  </section>
+
+  <!-- Upcoming Matches -->
+  <section class="section-padding" id="matches">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Upcoming <span>Matches</span></h2>
+      <p>Watch Live</p>
+    </div>
+    <div class="matches-grid">
+      <div class="match-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="match-header"><span>Group Stage</span> <span>18:00 UTC</span></div>
+        <div class="match-teams">
+          <div class="team">
+            <i class="fas fa-dragon fa-3x" style="color:var(--crimson-red);"></i>
+            <h4>Dragons</h4>
+          </div>
+          <div class="vs">VS</div>
+          <div class="team">
+            <i class="fas fa-ghost fa-3x" style="color:var(--neon-orange);"></i>
+            <h4>Phantoms</h4>
+          </div>
+        </div>
+      </div>
+      <div class="match-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="match-header"><span>Quarter Final</span> <span>20:00 UTC</span></div>
+        <div class="match-teams">
+          <div class="team">
+            <i class="fas fa-spider fa-3x" style="color:var(--purple-glow);"></i>
+            <h4>Venom</h4>
+          </div>
+          <div class="vs">VS</div>
+          <div class="team">
+            <i class="fas fa-bolt fa-3x" style="color:#FFD600;"></i>
+            <h4>Thunder</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="matches.html" class="btn btn-secondary">All Matches</a>
+    </div>
+  </section>
+
+  <!-- Esports Statistics -->
+  <section class="section-padding">
+    <div class="stats-container">
+      <div class="stat-item" data-aos="fade-up">
+        <h3 class="counter-value" data-target="250">0</h3>
+        <p>Pro Teams</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="counter-value" data-target="15000">0</h3>
+        <p>Daily Matches</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="counter-value" data-target="50">0</h3>
+        <p>Tournaments</p>
+      </div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="counter-value" data-target="2">0</h3><span>M+</span>
+        <p>Active Users</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELDRITCH NEW SECTIONS -->
+
+  <!-- Classes Section -->
+  <section class="classes-section">
+    <div class="classes-subtitle">Thread Thine Path</div>
+    <div class="classes-title">With a Careful Step</div>
+    <div class="title-divider"><i class="fas fa-gem"></i></div>
+    <p class="classes-desc">
+      There is in the land of Mnar a vast still lake that is fed by no stream and out of which no stream flows.
+    </p>
+
+    <div class="classes-grid">
+      <div class="class-card" data-aos="fade-up">
+        <img src="assets/images/dragon.jpg" alt="Dragonslayer" class="class-img">
+        <div class="class-name">Dragonslayer</div>
+        <div class="class-text">A brave adventurer clad in fireproof steel</div>
+      </div>
+      <div class="class-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/single_knight.jpg" alt="Bushi" class="class-img">
+        <div class="class-name">Bushi</div>
+        <div class="class-text">A nimble nobleman from a distant land</div>
+      </div>
+      <div class="class-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/images/four_knights.jpg" alt="Fire Seeker" class="class-img">
+        <div class="class-name">Fire Seeker</div>
+        <div class="class-text">A remnant of a former saint</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section" data-aos="fade-in">
+    <video id="promo-video" class="bg-video" autoplay loop muted playsinline>
+      <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+    <div class="video-content">
+      <div class="video-play-btn" onclick="togglePromoVideo()" id="video-btn">
+        <i class="fas fa-pause"></i>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function togglePromoVideo() {
+      const video = document.getElementById('promo-video');
+      const btnIcon = document.querySelector('#video-btn i');
+      if (video.paused) {
+        video.play();
+        btnIcon.classList.remove('fa-play');
+        btnIcon.classList.add('fa-pause');
+      } else {
+        video.pause();
+        btnIcon.classList.remove('fa-pause');
+        btnIcon.classList.add('fa-play');
+      }
+    }
+  </script>
+
+
+  <!-- Preorder Section -->
+  <section class="preorder-section">
+    <div class="preorder-left" data-aos="fade-right">
+      <img src="assets/images/single_knight.jpg" alt="Hollow Soul Box Art"
+        style="max-height: 400px; width: auto; border: 2px solid #333; border-radius: 10px;">
+    </div>
+    <div class="preorder-right" data-aos="fade-left">
+      <div class="preorder-title">PREORDER NOW!</div>
+      <p class="preorder-text">
+        But half buried in the rushes was spied a curious green idol of stone; an exceedingly ancient idol coated with
+        seaweed and chiselled in the likeness of Bokrug, the great water-lizard. That idol, enshrined in the high temple
+        at Ilarnek, was subsequently worshipped beneath the gibbous moon throughout the land of Mnar.
+      </p>
+      <button class="preorder-btn">PREORDER</button>
+    </div>
+  </section>
+
+  <!-- Home Gallery -->
+  <section class="home-gallery">
+    <div class="gallery-item">
+      <img src="assets/images/stadium_arena.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Empire Ascendant</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/dragon.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Fire & Blood</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/single_knight.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Dark Souls</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/four_knights.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>The Council</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/command_center.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Valkyrie Profile</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/gaming_setup.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Shadow Tactics</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/stadium_arena.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Battleborn</span></div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/dragon.jpg" alt="Gallery">
+      <div class="gallery-overlay"><span>Kingdom Hearts</span></div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="section-title">
+      <h2>Join The <span>Arena</span></h2>
+      <p>Subscribe for exclusive updates</p>
+    </div>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+      <input type="email" placeholder="Enter your email address" required>
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Global JS -->
+  <script src="js/loading.js"></script>\n
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Teams</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/loading.css">\n
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/teams.css">
+</head>
+
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/enaku_Esports_animation_video.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="teams-hero" id="particles-js">
+    <div style="position:relative; z-index:1;" data-aos="fade-up">
+      <h1>Pro <span>Teams</span></h1>
+      <p>Discover the legends of the arena.</p>
+    </div>
+  </section>
+
+  <!-- Featured Teams Cards -->
+  <section class="section-padding">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Top <span>Organizations</span></h2>
+      <p>Featured Teams</p>
+    </div>
+
+    <div class="teams-grid">
+      <div class="team-card" data-aos="fade-up">
+        <i class="fas fa-dragon team-logo-lg" style="color:var(--crimson-red);"></i>
+        <div class="team-info">
+          <h3>Dragons</h3>
+          <p>Region: North America</p>
+          <div class="team-stats-mini">
+            <div class="stat-box"><span>142</span><small>Wins</small></div>
+            <div class="stat-box"><span>8</span><small>Titles</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-ghost team-logo-lg" style="color:var(--neon-orange);"></i>
+        <div class="team-info">
+          <h3>Phantoms</h3>
+          <p>Region: Europe</p>
+          <div class="team-stats-mini">
+            <div class="stat-box"><span>128</span><small>Wins</small></div>
+            <div class="stat-box"><span>5</span><small>Titles</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-spider team-logo-lg" style="color:var(--purple-glow);"></i>
+        <div class="team-info">
+          <h3>Venom</h3>
+          <p>Region: Asia</p>
+          <div class="team-stats-mini">
+            <div class="stat-box"><span>115</span><small>Wins</small></div>
+            <div class="stat-box"><span>3</span><small>Titles</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Rankings Table -->
+  <section class="rankings-section">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Global <span>Rankings</span></h2>
+      <p>Season 2026 Leaderboard</p>
+    </div>
+
+    <div style="overflow-x:auto;" data-aos="fade-up">
+      <table class="rankings-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Points</th>
+            <th>Win Rate</th>
+            <th>Trend</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank-number">#1</td>
+            <td>
+              <div class="team-name-cell">
+                <i class="fas fa-dragon" style="color:var(--crimson-red);"></i> Dragons
+              </div>
+            </td>
+            <td>8,450</td>
+            <td>68%</td>
+            <td class="trend-flat"><i class="fas fa-minus"></i></td>
+          </tr>
+          <tr>
+            <td class="rank-number">#2</td>
+            <td>
+              <div class="team-name-cell">
+                <i class="fas fa-ghost" style="color:var(--neon-orange);"></i> Phantoms
+              </div>
+            </td>
+            <td>7,920</td>
+            <td>65%</td>
+            <td class="trend-up"><i class="fas fa-arrow-up"></i> +1</td>
+          </tr>
+          <tr>
+            <td class="rank-number">#3</td>
+            <td>
+              <div class="team-name-cell">
+                <i class="fas fa-spider" style="color:var(--purple-glow);"></i> Venom
+              </div>
+            </td>
+            <td>7,600</td>
+            <td>62%</td>
+            <td class="trend-down"><i class="fas fa-arrow-down"></i> -1</td>
+          </tr>
+          <tr>
+            <td class="rank-number">#4</td>
+            <td>
+              <div class="team-name-cell">
+                <i class="fas fa-bolt" style="color:#FFD600;"></i> Thunder
+              </div>
+            </td>
+            <td>6,800</td>
+            <td>58%</td>
+            <td class="trend-up"><i class="fas fa-arrow-up"></i> +2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section-padding">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Hall Of <span>Fame</span></h2>
+      <p>Legendary Achievements</p>
+    </div>
+
+    <div class="achievements-grid" data-aos="fade-up">
+      <div class="achievement-card">
+        <i class="fas fa-trophy"></i>
+        <h4>World Champions 2025</h4>
+        <p style="color:var(--crimson-red); font-family:var(--font-heading); margin-top:10px;">Dragons</p>
+      </div>
+      <div class="achievement-card">
+        <i class="fas fa-medal"></i>
+        <h4>Longest Win Streak</h4>
+        <p style="color:var(--neon-orange); font-family:var(--font-heading); margin-top:10px;">Phantoms (24)</p>
+      </div>
+      <div class="achievement-card">
+        <i class="fas fa-star"></i>
+        <h4>MVP Organization</h4>
+        <p style="color:var(--purple-glow); font-family:var(--font-heading); margin-top:10px;">Venom</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n
+  <script src="js/main.js"></script>
+</body>
+
+</html>

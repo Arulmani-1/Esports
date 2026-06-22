@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly | Tournaments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/loading.css">\n
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/tournaments.css">
+</head>
+
+<body>
+  <video class="page-bg-video" autoplay loop muted playsinline>
+    <source src="assets/videos/vid_3.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="custom-cursor"></div>
+
+  <div id="navbar-placeholder"></div>
+
+  <section class="tournaments-hero">
+    <div class="tournaments-hero-content" data-aos="fade-up">
+      <h1>Global <span>Tournaments</span></h1>
+      <p style="color:var(--white); font-size:1.2rem; margin-top:10px;">Compete against the best and win huge prizes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tournament Listings -->
+  <section class="section-padding">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Active <span>Events</span></h2>
+      <p>Join Now</p>
+    </div>
+
+    <div class="tournament-grid">
+      <div class="tourney-card" data-aos="fade-up">
+        <div class="tourney-img">
+          <i class="fas fa-trophy" style="color:#FFD700;"></i>
+        </div>
+        <div class="tourney-info">
+          <div class="tourney-meta">
+            <span>5v5 Battle Arena</span>
+            <span>Starts: Oct 20</span>
+          </div>
+          <h3>Pro League Season 5</h3>
+          <p style="color:var(--gray); margin-bottom: 20px;">The ultimate battle arena showdown. 32 teams competing for
+            the championship.</p>
+          <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
+            Prize: $100,000</div>
+          <a href="#register" class="btn btn-primary" style="width:100%; text-align:center;">Register Team</a>
+        </div>
+      </div>
+
+      <div class="tourney-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="tourney-img">
+          <i class="fas fa-crosshairs" style="color:var(--neon-orange);"></i>
+        </div>
+        <div class="tourney-info">
+          <div class="tourney-meta">
+            <span>Tactical Shooter</span>
+            <span>Starts: Nov 05</span>
+          </div>
+          <h3>Global Invitational</h3>
+          <p style="color:var(--gray); margin-bottom: 20px;">Invite only tournament featuring the top 16 organizations
+            in the world.</p>
+          <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
+            Prize: $250,000</div>
+          <a href="#" class="btn btn-secondary" style="width:100%; text-align:center;">View Details</a>
+        </div>
+      </div>
+
+      <div class="tourney-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="tourney-img">
+          <i class="fas fa-gamepad" style="color:var(--purple-glow);"></i>
+        </div>
+        <div class="tourney-info">
+          <div class="tourney-meta">
+            <span>Fighting Game</span>
+            <span>Starts: Dec 12</span>
+          </div>
+          <h3>Winter Clash</h3>
+          <p style="color:var(--gray); margin-bottom: 20px;">Open registration fighting game tournament. Prove you are
+            the king.</p>
+          <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
+            Prize: $50,000</div>
+          <a href="#register" class="btn btn-primary" style="width:100%; text-align:center;">Register Solo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bracket System -->
+  <section class="section-padding" style="background:var(--bg-secondary);">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Pro League <span>Bracket</span></h2>
+      <p>Playoffs</p>
+    </div>
+
+    <div class="bracket-wrapper" data-aos="fade-up">
+      <div class="bracket">
+        <!-- Quarter Finals -->
+        <div class="round">
+          <div class="matchup">
+            <div class="team-slot winner"><span>Dragons</span> <span class="score">2</span></div>
+            <div class="team-slot"><span>Tigers</span> <span class="score">0</span></div>
+          </div>
+          <div class="matchup">
+            <div class="team-slot winner"><span>Phantoms</span> <span class="score">2</span></div>
+            <div class="team-slot"><span>Wolves</span> <span class="score">1</span></div>
+          </div>
+        </div>
+
+        <!-- Semi Finals -->
+        <div class="round">
+          <div class="matchup">
+            <div class="team-slot winner"><span>Dragons</span> <span class="score">3</span></div>
+            <div class="team-slot"><span>Phantoms</span> <span class="score">2</span></div>
+          </div>
+        </div>
+
+        <!-- Finals -->
+        <div class="round">
+          <div class="matchup">
+            <div class="team-slot winner"><span>Dragons</span> <span class="score">🏆</span></div>
+            <div class="team-slot"><span>TBD</span> <span class="score"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="section-padding" id="register">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Join A <span>Tournament</span></h2>
+      <p>Registration Form</p>
+    </div>
+
+    <div class="registration-section" data-aos="fade-up">
+      <form onsubmit="event.preventDefault(); alert('Registration Submitted!');">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Team Name</label>
+            <input type="text" placeholder="Enter team name" required>
+          </div>
+          <div class="form-group">
+            <label>Captain Email</label>
+            <input type="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group">
+            <label>Select Tournament</label>
+            <select required>
+              <option value="">Select an option</option>
+              <option value="pro_league">Pro League Season 5</option>
+              <option value="winter_clash">Winter Clash</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Region</label>
+            <select required>
+              <option value="">Select region</option>
+              <option value="na">North America</option>
+              <option value="eu">Europe</option>
+              <option value="asia">Asia</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;">Submit Registration</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/loading.js"></script>\n
+  <script src="js/main.js"></script>
+</body>
+
+</html>
