@@ -17,7 +17,8 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-header">
-        STACKLY
+        <span>STACKLY</span>
+        <i class="fas fa-bars dashboard-menu-toggle"></i>
       </div>
       <ul class="sidebar-nav">
         <li class="sidebar-category">MAIN MENU</li>
@@ -408,6 +409,14 @@
       const savedEmail = localStorage.getItem('userEmail');
       if(savedEmail) {
         document.querySelector('.topbar-email').textContent = savedEmail;
+      }
+      
+      const dashboardToggle = document.querySelector('.dashboard-menu-toggle');
+      const sidebar = document.querySelector('.sidebar');
+      if (dashboardToggle && sidebar) {
+        dashboardToggle.addEventListener('click', () => {
+          sidebar.classList.toggle('active');
+        });
       }
     });
   </script>

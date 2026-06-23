@@ -458,17 +458,45 @@ body, html {
 .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 
 /* Responsive */
+.dashboard-menu-toggle { display: none; color: #fff; cursor: pointer; font-size: 1.2rem; }
+
 @media (max-width: 1200px) {
   .esports-stats-row { grid-template-columns: repeat(2, 1fr); }
   .esports-grid-2col, .esports-grid-3col { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .dashboard-container { flex-direction: column; }
+  .dashboard-container { 
+    flex-direction: column; 
+    height: auto; 
+    overflow: visible; 
+  }
   .sidebar { width: 100%; height: auto; padding: 15px; }
-  .sidebar-nav { display: flex; flex-direction: row; overflow-x: auto; padding-bottom: 10px; gap: 10px; }
+  
+  .sidebar-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    border-bottom: none;
+  }
+  .dashboard-menu-toggle { display: block; }
+  
+  .sidebar-nav { 
+    display: none; 
+    flex-direction: column; 
+    padding-bottom: 10px; 
+    gap: 5px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 10px;
+  }
+  .sidebar.active .sidebar-nav {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+  
   .sidebar-nav li { margin-bottom: 0; }
-  .sidebar-category { display: none; }
-  .sidebar-nav a { padding: 10px 15px; white-space: nowrap; border-radius: 20px; }
+  .sidebar-category { display: block; padding-left: 10px; }
+  .sidebar-nav a { padding: 10px 15px; border-radius: 8px; }
   .topbar { flex-direction: column; align-items: flex-start; gap: 15px; }
   .topbar-right { width: 100%; justify-content: space-between; }
   .content-wrapper { padding: 15px; }
