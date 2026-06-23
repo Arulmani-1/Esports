@@ -94,7 +94,7 @@
     <!-- Main Content -->
     <main>
       <!-- Featured Post -->
-      <article class="featured-post" data-aos="fade-up">
+      <article class="featured-post" id="post-pro-league" data-aos="fade-up">
         <img src="assets/images/command_center.jpg" alt="Featured Post" class="featured-img">
         <div class="featured-overlay">
           <span class="post-category">Tournaments</span>
@@ -111,7 +111,7 @@
 
       <!-- Blog Grid -->
       <div class="blog-grid">
-        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+        <article class="blog-card" id="post-gaming-mice" data-aos="fade-up" data-aos-delay="100">
           <img src="assets/images/single_knight.jpg" alt="Blog Post" class="blog-card-img">
           <div class="blog-card-content">
             <span class="post-category" style="background:var(--neon-orange);">Gear</span>
@@ -123,11 +123,11 @@
               style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
               <span>Oct 10, 2026</span>
             </div>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
-        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <article class="blog-card" id="post-patch-notes" data-aos="fade-up" data-aos-delay="200">
           <img src="assets/images/gaming_gear.jpg" alt="Blog Post" class="blog-card-img">
           <div class="blog-card-content">
             <span class="post-category" style="background:var(--purple-glow);">Updates</span>
@@ -139,7 +139,7 @@
               style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
               <span>Oct 08, 2026</span>
             </div>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
@@ -155,7 +155,7 @@
               style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
               <span>Oct 05, 2026</span>
             </div>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
 
@@ -171,18 +171,18 @@
               style="margin-bottom:15px; border-bottom:1px solid rgba(255,255,255,0.05); padding-bottom:15px;">
               <span>Oct 02, 2026</span>
             </div>
-            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="404.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </article>
       </div>
 
       <!-- Pagination -->
       <div class="pagination" data-aos="fade-up">
-        <a href="#" class="page-link"><i class="fas fa-chevron-left"></i></a>
-        <a href="#" class="page-link active">1</a>
-        <a href="#" class="page-link">2</a>
-        <a href="#" class="page-link">3</a>
-        <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+        <a href="404.html" class="page-link"><i class="fas fa-chevron-left"></i></a>
+        <a href="404.html" class="page-link active">1</a>
+        <a href="404.html" class="page-link">2</a>
+        <a href="404.html" class="page-link">3</a>
+        <a href="404.html" class="page-link"><i class="fas fa-chevron-right"></i></a>
       </div>
     </main>
 
@@ -191,7 +191,7 @@
       <!-- Search Widget -->
       <div class="sidebar-widget search-widget" data-aos="fade-up">
         <h4 class="sidebar-title">Search</h4>
-        <form onsubmit="event.preventDefault();">
+        <form onsubmit="event.preventDefault(); window.location.href='404.html';">
           <input type="text" placeholder="Search keywords..." required>
           <button type="submit"><i class="fas fa-search"></i></button>
         </form>
@@ -201,39 +201,39 @@
       <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="100">
         <h4 class="sidebar-title">Categories</h4>
         <div class="category-list">
-          <a href="#"><span>Tournaments</span> <span>(45)</span></a>
-          <a href="#"><span>Gear Reviews</span> <span>(28)</span></a>
-          <a href="#"><span>Patch Notes</span> <span>(32)</span></a>
-          <a href="#"><span>Interviews</span> <span>(14)</span></a>
-          <a href="#"><span>Community</span> <span>(56)</span></a>
+          <a href="404.html"><span>Tournaments</span> <span>(45)</span></a>
+          <a href="404.html"><span>Gear Reviews</span> <span>(28)</span></a>
+          <a href="404.html"><span>Patch Notes</span> <span>(32)</span></a>
+          <a href="404.html"><span>Interviews</span> <span>(14)</span></a>
+          <a href="404.html"><span>Community</span> <span>(56)</span></a>
         </div>
       </div>
 
       <!-- Recent Posts Widget -->
       <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="200">
         <h4 class="sidebar-title">Recent Posts</h4>
-        <div class="recent-post-item">
+        <div class="recent-post-item" onclick="window.location.href='#post-pro-league'">
           <img src="assets/images/command_center.jpg" alt="Recent">
           <div class="recent-post-info">
-            <a href="#">
+            <a href="#post-pro-league">
               <h5>Pro League Season 5 Announced</h5>
             </a>
             <span>Oct 12, 2026</span>
           </div>
         </div>
-        <div class="recent-post-item">
+        <div class="recent-post-item" onclick="window.location.href='#post-gaming-mice'">
           <img src="assets/images/single_knight.jpg" alt="Recent">
           <div class="recent-post-info">
-            <a href="#">
+            <a href="#post-gaming-mice">
               <h5>Top 5 Gaming Mice for FPS</h5>
             </a>
             <span>Oct 10, 2026</span>
           </div>
         </div>
-        <div class="recent-post-item">
+        <div class="recent-post-item" onclick="window.location.href='#post-patch-notes'">
           <img src="assets/images/gaming_gear.jpg" alt="Recent">
           <div class="recent-post-info">
-            <a href="#">
+            <a href="#post-patch-notes">
               <h5>Major Patch Notes Analysis</h5>
             </a>
             <span>Oct 08, 2026</span>
@@ -245,14 +245,14 @@
       <div class="sidebar-widget" data-aos="fade-up" data-aos-delay="300">
         <h4 class="sidebar-title">Popular Tags</h4>
         <div class="tags-cloud">
-          <a href="#">Esports</a>
-          <a href="#">Gaming</a>
-          <a href="#">Hardware</a>
-          <a href="#">FPS</a>
-          <a href="#">MOBA</a>
-          <a href="#">Streamers</a>
-          <a href="#">Events</a>
-          <a href="#">Update</a>
+          <a href="404.html">Esports</a>
+          <a href="404.html">Gaming</a>
+          <a href="404.html">Hardware</a>
+          <a href="404.html">FPS</a>
+          <a href="404.html">MOBA</a>
+          <a href="404.html">Streamers</a>
+          <a href="404.html">Events</a>
+          <a href="404.html">Update</a>
         </div>
       </div>
     </aside>

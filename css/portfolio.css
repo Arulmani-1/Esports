@@ -71,9 +71,31 @@
 .portfolio-filters {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
   margin: 40px 0;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-family: var(--font-subheading);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  background: transparent;
+  border: 1px solid var(--crimson-red);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--crimson-red);
+  box-shadow: var(--glow-red);
 }
 
 /* MASONRY GALLERY */

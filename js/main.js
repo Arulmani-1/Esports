@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
       galleryItems.forEach(item => {
         item.addEventListener('click', (e) => {
           e.preventDefault();
-          const imgSrc = item.getAttribute('href') || item.querySelector('img').getAttribute('src');
+          const imgSrc = item.querySelector('img').getAttribute('src');
           lightboxImg.src = imgSrc;
           lightboxModal.style.display = 'flex';
           setTimeout(() => { lightboxModal.style.opacity = '1'; }, 10);
