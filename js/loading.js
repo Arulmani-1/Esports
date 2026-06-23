@@ -10,21 +10,21 @@
     const spinner = document.createElement('div');
     spinner.className = 'loader-spinner';
     
-    const logo = document.createElement('div');
-    logo.className = 'loader-logo';
-    logo.innerText = 'S';
+    const svgHtml = `
+      <img src="assets/images/loading.png" alt="Loading Logo" class="loader-center-logo">
+    `;
     
     wrapper.appendChild(spinner);
-    wrapper.appendChild(logo);
+    wrapper.insertAdjacentHTML('beforeend', svgHtml);
     loader.appendChild(wrapper);
     document.body.insertBefore(loader, document.body.firstChild);
   } else {
-    // Upgrade existing HTML structure
-    if (!loader.querySelector('.loader-wrapper')) {
+    // Upgrade existing HTML structure if necessary
+    if (!loader.querySelector('.loader-center-logo')) {
       loader.innerHTML = `
         <div class="loader-wrapper">
           <div class="loader-spinner"></div>
-          <div class="loader-logo">S</div>
+          <img src="assets/images/loading.png" alt="Loading Logo" class="loader-center-logo">
         </div>
       `;
     }

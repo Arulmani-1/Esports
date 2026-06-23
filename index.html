@@ -35,9 +35,11 @@
   <!-- Custom Cursor -->
   <div class="custom-cursor"></div>
 
-  <!-- Page Loader -->
   <div id="page-loader">
-    <div class="loader-spinner"></div>
+    <div class="loader-wrapper">
+      <div class="loader-spinner"></div>
+      <img src="assets/images/loading.png" alt="Loading Logo" class="loader-center-logo">
+    </div>
   </div>
 
   <!-- Particles Background -->
@@ -45,7 +47,9 @@
 
   <!-- Header & Navigation -->
   <header>
-    <a href="index.html" class="logo">STACKLY</a>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+    </a>
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -109,7 +113,7 @@
         </div>
         <p class="slide-subtitle">That is not dead which can eternal lie, and with strange eons even death may
           die.<br>In his house at R'lyeh, dead Cthulhu waits dreaming.</p>
-        <a href="#" class="btn btn-transparent">BUY THEME</a>
+        <a href="404.html" class="btn btn-transparent">BUY THEME</a>
       </div>
     </div>
 
@@ -124,7 +128,7 @@
         </div>
         <p class="slide-subtitle">The oldest and strongest emotion of mankind is fear,<br>and the oldest and strongest
           kind of fear is fear of the unknown.</p>
-        <a href="#" class="btn btn-transparent">BUY THEME</a>
+        <a href="404.html" class="btn btn-transparent">BUY THEME</a>
       </div>
     </div>
 
@@ -139,7 +143,7 @@
         </div>
         <p class="slide-subtitle">It seemed to be a sort of monster, or symbol representing a monster,<br>of a form
           which only a diseased fancy could conceive.</p>
-        <a href="#" class="btn btn-transparent">BUY THEME</a>
+        <a href="404.html" class="btn btn-transparent">BUY THEME</a>
       </div>
     </div>
 
@@ -247,7 +251,7 @@
 
     <div class="classes-grid">
       <div class="class-card" data-aos="fade-up">
-        <img src="assets/images/dragon.jpg" alt="Dragonslayer" class="class-img">
+        <img src="assets/images/banner.jpg" alt="Dragonslayer" class="class-img">
         <div class="class-name">Dragonslayer</div>
         <div class="class-text">A brave adventurer clad in fireproof steel</div>
       </div>
@@ -307,7 +311,7 @@
         seaweed and chiselled in the likeness of Bokrug, the great water-lizard. That idol, enshrined in the high temple
         at Ilarnek, was subsequently worshipped beneath the gibbous moon throughout the land of Mnar.
       </p>
-      <button class="preorder-btn">PREORDER</button>
+      <button class="preorder-btn" onclick="window.location.href='404.html'">PREORDER</button>
     </div>
   </section>
 
@@ -318,7 +322,7 @@
       <div class="gallery-overlay"><span>Empire Ascendant</span></div>
     </div>
     <div class="gallery-item">
-      <img src="assets/images/dragon.jpg" alt="Gallery">
+      <img src="assets/images/match-image-1.jpg" alt="Gallery">
       <div class="gallery-overlay"><span>Fire & Blood</span></div>
     </div>
     <div class="gallery-item">
@@ -334,15 +338,15 @@
       <div class="gallery-overlay"><span>Valkyrie Profile</span></div>
     </div>
     <div class="gallery-item">
-      <img src="assets/images/gaming_setup.jpg" alt="Gallery">
+      <img src="assets/images/match-image-5.jpg" alt="Gallery">
       <div class="gallery-overlay"><span>Shadow Tactics</span></div>
     </div>
     <div class="gallery-item">
-      <img src="assets/images/stadium_arena.jpg" alt="Gallery">
+      <img src="assets/images/match-image-6.jpg" alt="Gallery">
       <div class="gallery-overlay"><span>Battleborn</span></div>
     </div>
     <div class="gallery-item">
-      <img src="assets/images/dragon.jpg" alt="Gallery">
+      <img src="assets/images/match-image-2.jpg" alt="Gallery">
       <div class="gallery-overlay"><span>Kingdom Hearts</span></div>
     </div>
   </section>
@@ -353,14 +357,50 @@
       <h2>Join The <span>Arena</span></h2>
       <p>Subscribe for exclusive updates</p>
     </div>
-    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('subscribe successfully submited');">
       <input type="email" placeholder="Enter your email address" required>
       <button type="submit" class="btn btn-primary">Subscribe</button>
     </form>
   </section>
 
   <!-- Footer -->
-  <div id="footer-placeholder"></div>
+  <footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+      </a>
+      <p style="margin-top:20px;">The premier destination for competitive gaming and esports tournaments.</p>
+      <div class="social-links">
+        <a href="404.html"><i class="fab fa-twitter"></i></a>
+        <a href="404.html"><i class="fab fa-twitch"></i></a>
+        <a href="404.html"><i class="fab fa-youtube"></i></a>
+        <a href="404.html"><i class="fab fa-discord"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="index.html">Shop</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="index.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Stackly. All Rights Reserved.</p>
+  </div>
+</footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
