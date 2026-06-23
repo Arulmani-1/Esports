@@ -291,6 +291,80 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/loading.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.querySelector('.product-grid');
+      
+      // Dropdown Sorting
+      const sortSelect = document.querySelector('.shop-top-bar select');
+      if(sortSelect && grid) {
+        sortSelect.addEventListener('change', (e) => {
+          const value = e.target.value;
+          const products = Array.from(grid.querySelectorAll('.product-card'));
+          
+          products.sort((a, b) => {
+            const getPrice = (el) => {
+              const text = el.querySelector('.product-price').textContent;
+              const match = text.match(/\$([0-9.]+)(?!.*\$)/);
+              return match ? parseFloat(match[1]) : 0;
+            };
+            const priceA = getPrice(a);
+            const priceB = getPrice(b);
+            
+            if(value === 'Sort by Price: Low to High') return priceA - priceB;
+            if(value === 'Sort by Price: High to Low') return priceB - priceA;
+            return 0;
+          });
+          
+          products.forEach(p => grid.appendChild(p));
+        });
+      }
+
+      // Categories and Brands to 404
+      const checkboxes = document.querySelectorAll('.shop-sidebar input[type="checkbox"]');
+      checkboxes.forEach(cb => {
+        cb.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.location.href = '404.html';
+        });
+      });
+
+      // View and Wishlist icons to 404
+      const actionBtns = document.querySelectorAll('.action-btn');
+      actionBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          window.location.href = '404.html';
+        });
+      });
+
+      // Price Filter
+      const priceSlider = document.querySelector('input[type="range"]');
+      const priceDisplays = document.querySelectorAll('.price-range span');
+      const priceMaxDisplay = priceDisplays.length > 1 ? priceDisplays[1] : null;
+      
+      if(priceSlider && priceMaxDisplay && grid) {
+        priceSlider.addEventListener('input', (e) => {
+          const maxPrice = parseFloat(e.target.value);
+          priceMaxDisplay.textContent = `$${maxPrice}`;
+          
+          const products = Array.from(grid.querySelectorAll('.product-card'));
+          products.forEach(p => {
+            const text = p.querySelector('.product-price').textContent;
+            const match = text.match(/\$([0-9.]+)(?!.*\$)/);
+            const price = match ? parseFloat(match[1]) : 0;
+            
+            if(price <= maxPrice) {
+              p.style.display = '';
+            } else {
+              p.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

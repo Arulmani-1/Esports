@@ -219,3 +219,233 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ELDRITCH FORUM STYLES */
+.eldritch-forum-header h2 {
+  font-family: var(--font-subheading);
+  color: var(--white);
+}
+
+.eldritch-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.eldritch-table th {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 10px;
+  font-family: var(--font-subheading);
+  color: #ccc;
+  font-weight: 300;
+}
+
+.eldritch-table td {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 15px 10px;
+  vertical-align: top;
+}
+
+.eldritch-table td a {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.eldritch-table td a:hover {
+  color: var(--crimson-red);
+}
+
+.eldritch-table td p {
+  color: var(--gray);
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.last-post-info {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+.last-post-info span {
+  color: #aaa;
+}
+
+.eldritch-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.eldritch-widget .widget-title {
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-family: var(--font-subheading);
+  color: #fff;
+  font-weight: 300;
+}
+
+.eldritch-search-form {
+  position: relative;
+}
+
+.eldritch-search-form input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.eldritch-search-form button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.eldritch-login-form label {
+  display: block;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.eldritch-login-form input[type="text"],
+.eldritch-login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.remember-me {
+  font-size: 0.8rem;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-footer button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.eldritch-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-articles-list li {
+  margin-bottom: 15px;
+}
+
+.top-articles-list li a {
+  display: block;
+  color: #fff;
+  margin-bottom: 3px;
+  transition: color 0.3s;
+}
+
+.top-articles-list li a:hover {
+  color: var(--crimson-red);
+}
+
+.top-articles-list li span {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.simple-links li {
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.simple-links li a {
+  display: block;
+  padding: 10px 0;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.simple-links li a:hover {
+  color: #fff;
+}
+
+/* ELDRITCH TOPIC POST STYLES */
+.eldritch-post-list {
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.eldritch-post {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  gap: 30px;
+}
+
+.post-author {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.post-avatar {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.post-author-info h4 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+}
+
+.post-author-info span {
+  font-size: 0.75rem;
+  color: #aaa;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.post-author-info p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.post-content {
+  flex: 1;
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
