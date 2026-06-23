@@ -70,14 +70,37 @@
 
 <aside class="mobile-sidebar">
   <div class="close-btn"><i class="fas fa-times"></i></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="about_me.html">About Me</a></li>
-    <li><a href="matches.html">Matches</a></li>
-    <li><a href="index.html">Forum</a></li>
-    <li><a href="index.html">Shop</a></li>
-  </ul>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
+        <ul class="mobile-dropdown">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="matches.html">Single Match</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="coming_soon.html">Coming Soon</a></li>
+          <li><a href="404.html">404 Error Page</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
+        <ul class="mobile-dropdown">
+          <li><a href="all_forum.html">All Forum</a></li>
+          <li><a href="single_forum.html">Single Forum</a></li>
+          <li><a href="topic.html">Topic</a></li>
+        </ul>
+      </li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li>
+        <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
+        <ul class="mobile-dropdown">
+          <li><a href="shop.html">Products</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+    </ul>
 </aside>
 
 
@@ -111,7 +134,7 @@
             the championship.</p>
           <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
             Prize: $100,000</div>
-          <a href="#register" class="btn btn-primary" style="width:100%; text-align:center;">Register Team</a>
+          <a href="404.html" class="btn btn-primary" style="width:100%; text-align:center;">Register Team</a>
         </div>
       </div>
 
@@ -129,7 +152,7 @@
             in the world.</p>
           <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
             Prize: $250,000</div>
-          <a href="#" class="btn btn-secondary" style="width:100%; text-align:center;">View Details</a>
+          <a href="404.html" class="btn btn-secondary" style="width:100%; text-align:center;">View Details</a>
         </div>
       </div>
 
@@ -147,7 +170,7 @@
             the king.</p>
           <div style="font-family:var(--font-heading); font-size:1.5rem; color:var(--crimson-red); margin-bottom:20px;">
             Prize: $50,000</div>
-          <a href="#register" class="btn btn-primary" style="width:100%; text-align:center;">Register Solo</a>
+          <a href="404.html" class="btn btn-primary" style="width:100%; text-align:center;">Register Solo</a>
         </div>
       </div>
     </div>
@@ -201,7 +224,7 @@
     </div>
 
     <div class="registration-section" data-aos="fade-up">
-      <form onsubmit="event.preventDefault(); alert('Registration Submitted!');">
+      <form action="404.html" method="GET">
         <div class="form-grid">
           <div class="form-group">
             <label>Team Name</label>

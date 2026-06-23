@@ -28,15 +28,53 @@
   <div class="custom-cursor"></div>
 
   <header>
-  <a href="index.html" class="logo">
-    <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
-  </a>
-  <nav>
-    <ul class="nav-links">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="matches.html">Single Match</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="coming_soon.html">Coming Soon</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="all_forum.html">All Forum</a></li>
+            <li><a href="single_forum.html">Single Forum</a></li>
+            <li><a href="topic.html">Topic</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html">Products</a></li>
+          </ul>
+        </li>
+
+        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <aside class="mobile-sidebar">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul>
       <li><a href="index.html">Home</a></li>
       <li>
         <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
+        <ul class="mobile-dropdown">
           <li><a href="about.html">About Us</a></li>
           <li><a href="about_me.html">About Me</a></li>
           <li><a href="matches.html">Single Match</a></li>
@@ -47,7 +85,7 @@
       </li>
       <li>
         <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
+        <ul class="mobile-dropdown">
           <li><a href="all_forum.html">All Forum</a></li>
           <li><a href="single_forum.html">Single Forum</a></li>
           <li><a href="topic.html">Topic</a></li>
@@ -57,78 +95,87 @@
       <li><a href="blog.html">Blog</a></li>
       <li>
         <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
+        <ul class="mobile-dropdown">
           <li><a href="shop.html">Products</a></li>
         </ul>
       </li>
-
       <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
     </ul>
-    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-  </nav>
-</header>
+  </aside>
 
-<aside class="mobile-sidebar">
-  <div class="close-btn"><i class="fas fa-times"></i></div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="about_me.html">About Me</a></li>
-    <li><a href="matches.html">Matches</a></li>
-    <li><a href="index.html">Forum</a></li>
-    <li><a href="index.html">Shop</a></li>
-  </ul>
-</aside>
-
-
+  <!-- 
   <section class="teams-hero" id="particles-js">
     <div style="position:relative; z-index:1;" data-aos="fade-up">
       <h1>Pro <span>Teams</span></h1>
       <p>Discover the legends of the arena.</p>
     </div>
-  </section>
+  </section> -->
 
   <!-- Featured Teams Cards -->
   <section class="section-padding">
     <div class="section-title" data-aos="fade-up">
-      <h2>Top <span>Organizations</span></h2>
+      <h2>Pro <span>Teams</span></h2>
       <p>Featured Teams</p>
     </div>
 
     <div class="teams-grid">
       <div class="team-card" data-aos="fade-up">
-        <i class="fas fa-dragon team-logo-lg" style="color:var(--crimson-red);"></i>
+        <div class="team-img">
+          <i class="fas fa-dragon" style="color:var(--crimson-red);"></i>
+        </div>
         <div class="team-info">
+          <div class="team-meta">
+            <span>North America</span>
+            <span>Rank #1</span>
+          </div>
           <h3>Dragons</h3>
-          <p>Region: North America</p>
+          <p style="color:var(--gray); margin-bottom: 20px;">The undisputed champions of the region. Known for their
+            aggressive playstyle and dominant early game strategies.</p>
           <div class="team-stats-mini">
             <div class="stat-box"><span>142</span><small>Wins</small></div>
             <div class="stat-box"><span>8</span><small>Titles</small></div>
           </div>
+          <a href="404.html" class="btn btn-primary" style="width:100%; text-align:center;">View Roster</a>
         </div>
       </div>
 
       <div class="team-card" data-aos="fade-up" data-aos-delay="100">
-        <i class="fas fa-ghost team-logo-lg" style="color:var(--neon-orange);"></i>
+        <div class="team-img">
+          <i class="fas fa-ghost" style="color:var(--neon-orange);"></i>
+        </div>
         <div class="team-info">
+          <div class="team-meta">
+            <span>Europe</span>
+            <span>Rank #2</span>
+          </div>
           <h3>Phantoms</h3>
-          <p>Region: Europe</p>
+          <p style="color:var(--gray); margin-bottom: 20px;">Masters of stealth and tactical executes. They hold the
+            record for the longest unbroken win streak in league history.</p>
           <div class="team-stats-mini">
             <div class="stat-box"><span>128</span><small>Wins</small></div>
             <div class="stat-box"><span>5</span><small>Titles</small></div>
           </div>
+          <a href="404.html" class="btn btn-primary" style="width:100%; text-align:center;">View Roster</a>
         </div>
       </div>
 
       <div class="team-card" data-aos="fade-up" data-aos-delay="200">
-        <i class="fas fa-spider team-logo-lg" style="color:var(--purple-glow);"></i>
+        <div class="team-img">
+          <i class="fas fa-spider" style="color:var(--purple-glow);"></i>
+        </div>
         <div class="team-info">
+          <div class="team-meta">
+            <span>Asia</span>
+            <span>Rank #3</span>
+          </div>
           <h3>Venom</h3>
-          <p>Region: Asia</p>
+          <p style="color:var(--gray); margin-bottom: 20px;">A highly coordinated team that punishes mistakes instantly.
+            Current rising stars looking to claim the world title.</p>
           <div class="team-stats-mini">
             <div class="stat-box"><span>115</span><small>Wins</small></div>
             <div class="stat-box"><span>3</span><small>Titles</small></div>
           </div>
+          <a href="404.html" class="btn btn-primary" style="width:100%; text-align:center;">View Roster</a>
         </div>
       </div>
     </div>
@@ -229,42 +276,42 @@
   </section>
 
   <footer>
-  <div class="footer-grid">
-    <div class="footer-col">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
-      </a>
-      <p style="margin-top:20px;">The premier destination for competitive gaming and esports tournaments.</p>
-      <div class="social-links">
-        <a href="404.html"><i class="fab fa-twitter"></i></a>
-        <a href="404.html"><i class="fab fa-twitch"></i></a>
-        <a href="404.html"><i class="fab fa-youtube"></i></a>
-        <a href="404.html"><i class="fab fa-discord"></i></a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+        </a>
+        <p style="margin-top:20px;">The premier destination for competitive gaming and esports tournaments.</p>
+        <div class="social-links">
+          <a href="404.html"><i class="fab fa-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-twitch"></i></a>
+          <a href="404.html"><i class="fab fa-youtube"></i></a>
+          <a href="404.html"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="index.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="tournaments.html">Tournaments</a></li>
-        <li><a href="teams.html">Teams</a></li>
-        <li><a href="index.html">Shop</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Stackly. All Rights Reserved.</p>
     </div>
-    <div class="footer-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="index.html">FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Stackly. All Rights Reserved.</p>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -20,11 +20,18 @@
         STACKLY
       </div>
       <ul class="sidebar-nav">
-        <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Overview</a></li>
-        <li><a href="#"><i class="fas fa-users"></i> Users Management</a></li>
-        <li><a href="#"><i class="fas fa-box"></i> Inventory</a></li>
-        <li><a href="#"><i class="fas fa-chart-pie"></i> Reports</a></li>
-        <li><a href="#"><i class="fas fa-cogs"></i> System Settings</a></li>
+        <li class="sidebar-category">MAIN MENU</li>
+        <li><a href="admin_dashboard.html" class="active"><i class="fas fa-th"></i> Dashboard</a></li>
+        <li><a href="404.html"><i class="fas fa-trophy"></i> Tournaments <span class="sidebar-badge">3</span></a></li>
+        <li><a href="404.html"><i class="fas fa-shield-alt"></i> Rosters</a></li>
+        <li><a href="404.html"><i class="fas fa-gamepad"></i> Matches</a></li>
+        <li><a href="404.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+        <li><a href="404.html"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        
+        <li class="sidebar-category" style="margin-top: 20px;">MANAGEMENT</li>
+        <li><a href="404.html"><i class="fas fa-money-bill-wave"></i> Prize Pools</a></li>
+        <li><a href="404.html"><i class="fas fa-video"></i> VODs</a></li>
+        <li><a href="404.html"><i class="fas fa-cog"></i> Settings</a></li>
       </ul>
     </aside>
 
@@ -52,68 +59,344 @@
 
       <!-- Content -->
       <div class="content-wrapper">
-        <div class="welcome-banner" style="background: linear-gradient(135deg, #0b1a13 0%, #1a3c27 100%);">
-          <h1>System Overview</h1>
-          <p>Manage users, monitor inventory, and review global statistics.</p>
+        
+        <!-- Stats Row -->
+        <div class="esports-stats-row">
+          <div class="esports-stat-card">
+            <div class="esports-stat-header">
+              <i class="fas fa-trophy esports-stat-icon" style="color: #fbbc04;"></i>
+              <span class="esports-stat-growth">+2 this month</span>
+            </div>
+            <div class="esports-stat-value">6</div>
+            <div class="esports-stat-label">Live Tournaments</div>
+          </div>
+          <div class="esports-stat-card" style="border-bottom-color: #a197d6;">
+            <div class="esports-stat-header">
+              <i class="fas fa-shield-alt esports-stat-icon" style="color: #b0b4ca;"></i>
+              <span class="esports-stat-growth">+4 this week</span>
+            </div>
+            <div class="esports-stat-value">86</div>
+            <div class="esports-stat-label">Rostered Players</div>
+          </div>
+          <div class="esports-stat-card" style="border-bottom-color: #f04a50;">
+            <div class="esports-stat-header">
+              <i class="fas fa-money-bill-wave esports-stat-icon" style="color: #f29900;"></i>
+              <span class="esports-stat-growth" style="color: #00d26a;">On track</span>
+            </div>
+            <div class="esports-stat-value">$1.4M</div>
+            <div class="esports-stat-label">Prize Pool Tracked</div>
+          </div>
+          <div class="esports-stat-card" style="border-bottom-color: #8e62f5;">
+            <div class="esports-stat-header">
+              <i class="fas fa-check-square esports-stat-icon" style="color: #00d26a;"></i>
+              <span class="esports-stat-growth">+9 this month</span>
+            </div>
+            <div class="esports-stat-value">132</div>
+            <div class="esports-stat-label">Matches Won (Season)</div>
+          </div>
         </div>
 
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-users"></i></div>
-            <div class="stat-details">
-              <h3>Total Users</h3>
-              <p class="stat-number">1,245</p>
+        <!-- Middle 2-Column Row -->
+        <div class="esports-grid-2col">
+          <!-- Active Tournaments Table -->
+          <div class="esports-panel">
+            <div class="esports-panel-header">
+              <div class="esports-panel-title">
+                <h2>Active Tournaments</h2>
+                <p>Current circuit overview</p>
+              </div>
+              <button class="btn-view-all">View All</button>
             </div>
+            <table class="esports-table">
+              <thead>
+                <tr>
+                  <th>Tournament</th>
+                  <th>Game</th>
+                  <th>Status</th>
+                  <th>Bracket Progress</th>
+                  <th>Final</th>
+                  <th>Prize</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="tourney-name">Ignition Masters</div>
+                    <div class="tourney-meta">NA &middot; LAN &middot; GG Casters</div>
+                  </td>
+                  <td><span class="game-pill pill-val">VALORANT</span></td>
+                  <td><span class="status-live">Live</span></td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar"><div class="progress-fill" style="width: 72%;"></div></div>
+                      <span class="progress-text">72%</span>
+                    </div>
+                  </td>
+                  <td class="tourney-meta">Jun 21</td>
+                  <td class="tourney-meta">$50,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tourney-name">Overdrive Championship</div>
+                    <div class="tourney-meta">EU &middot; Online &middot; FragTV</div>
+                  </td>
+                  <td><span class="game-pill pill-cs2">CS2</span></td>
+                  <td><span class="status-qual">Qualifiers</span></td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar"><div class="progress-fill" style="width: 38%;"></div></div>
+                      <span class="progress-text">38%</span>
+                    </div>
+                  </td>
+                  <td class="tourney-meta">Aug 05</td>
+                  <td class="tourney-meta">$75,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tourney-name">Rift World Cup</div>
+                    <div class="tourney-meta">Global &middot; LAN &middot; Riftcast</div>
+                  </td>
+                  <td><span class="game-pill pill-lol">LEAGUE OF LEGENDS</span></td>
+                  <td><span class="status-comp">Completed</span></td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                      <span class="progress-text">100%</span>
+                    </div>
+                  </td>
+                  <td class="tourney-meta">Sep 21</td>
+                  <td class="tourney-meta">$100k+</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tourney-name">Phantom Series</div>
+                    <div class="tourney-meta">SEA &middot; Online &middot; DotaVision</div>
+                  </td>
+                  <td><span class="game-pill pill-dota">DOTA 2</span></td>
+                  <td><span class="status-live">Live</span></td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar"><div class="progress-fill" style="width: 55%;"></div></div>
+                      <span class="progress-text">55%</span>
+                    </div>
+                  </td>
+                  <td class="tourney-meta">Jul 30</td>
+                  <td class="tourney-meta">$40,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="tourney-name">Shadow Invitational</div>
+                    <div class="tourney-meta">NA &middot; LAN &middot; GG Casters</div>
+                  </td>
+                  <td><span class="game-pill pill-val">VALORANT</span></td>
+                  <td><span class="status-rev">Review</span></td>
+                  <td>
+                    <div class="progress-container">
+                      <div class="progress-bar"><div class="progress-fill" style="width: 89%;"></div></div>
+                      <span class="progress-text">89%</span>
+                    </div>
+                  </td>
+                  <td class="tourney-meta">Jun 18</td>
+                  <td class="tourney-meta">$35,000</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-shopping-cart"></i></div>
-            <div class="stat-details">
-              <h3>Monthly Sales</h3>
-              <p class="stat-number">$14,230</p>
+
+          <!-- Live Feed -->
+          <div class="esports-panel">
+            <div class="esports-panel-header" style="margin-bottom: 30px;">
+              <div class="esports-panel-title">
+                <h2>Live Feed</h2>
+                <p>Org updates</p>
+              </div>
             </div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-server"></i></div>
-            <div class="stat-details">
-              <h3>Server Status</h3>
-              <p class="stat-number">99.9%</p>
+            
+            <div class="feed-list">
+              <div class="feed-item">
+                <div class="feed-icon" style="color: #fbbc04;"><i class="fas fa-trophy"></i></div>
+                <div class="feed-content">
+                  <p>Shadow Reapers defeated Cyber Titans 2-1 in Ignition Masters</p>
+                  <span class="feed-time">2h ago</span>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="feed-icon" style="color: #b0b4ca;"><i class="fas fa-clipboard-list"></i></div>
+                <div class="feed-content">
+                  <p>Roster change: Neon Warriors sign new support player</p>
+                  <span class="feed-time">4h ago</span>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="feed-icon" style="color: #00d26a;"><i class="fas fa-check-square"></i></div>
+                <div class="feed-content">
+                  <p>Rift World Cup &mdash; Grand Final VOD published</p>
+                  <span class="feed-time">Yesterday</span>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="feed-icon" style="color: #f04a50;"><i class="fas fa-exclamation-triangle"></i></div>
+                <div class="feed-content">
+                  <p>Phantom Series &mdash; Server issues delayed Game 3</p>
+                  <span class="feed-time">Yesterday</span>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="feed-icon" style="color: #8e62f5;"><i class="fas fa-gamepad"></i></div>
+                <div class="feed-content">
+                  <p>Patch 9.3 notes released &mdash; meta shift expected</p>
+                  <span class="feed-time">2d ago</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="dashboard-table-container">
-          <h2>Recent Users</h2>
-          <table class="dashboard-table">
-            <thead>
-              <tr>
-                <th>User ID</th>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>#10234</td>
-                <td>Alice Farmer</td>
-                <td>User</td>
-                <td><span class="status-badge status-active">Active</span></td>
-              </tr>
-              <tr>
-                <td>#10235</td>
-                <td>Bob The Builder</td>
-                <td>User</td>
-                <td><span class="status-badge status-active">Active</span></td>
-              </tr>
-              <tr>
-                <td>#00001</td>
-                <td>Super Admin</td>
-                <td>Admin</td>
-                <td><span class="status-badge status-active">Active</span></td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Bottom 3-Column Row -->
+        <div class="esports-grid-3col">
+          
+          <!-- Roster List -->
+          <div class="esports-panel">
+            <div class="esports-panel-header">
+              <div class="esports-panel-title">
+                <h2>Roster</h2>
+                <p>Active players</p>
+              </div>
+              <button class="btn-manage">Manage</button>
+            </div>
+            <div class="roster-list">
+              <div class="roster-item">
+                <div class="roster-player">
+                  <div class="roster-avatar">KA<div class="roster-status-dot dot-online"></div></div>
+                  <div class="roster-info">
+                    <h4>Kai 'Ronin' Alvarez</h4>
+                    <p>Duelist &mdash; VALORANT</p>
+                  </div>
+                </div>
+                <div class="roster-stats">
+                  <h4>14</h4>
+                  <p>matches</p>
+                </div>
+              </div>
+              <div class="roster-item">
+                <div class="roster-player">
+                  <div class="roster-avatar">MS<div class="roster-status-dot dot-online"></div></div>
+                  <div class="roster-info">
+                    <h4>Mira Solheim</h4>
+                    <p>IGL &mdash; CS2</p>
+                  </div>
+                </div>
+                <div class="roster-stats">
+                  <h4>11</h4>
+                  <p>matches</p>
+                </div>
+              </div>
+              <div class="roster-item">
+                <div class="roster-player">
+                  <div class="roster-avatar">TR<div class="roster-status-dot dot-idle"></div></div>
+                  <div class="roster-info">
+                    <h4>Tobias Reyes</h4>
+                    <p>Jungle &mdash; League</p>
+                  </div>
+                </div>
+                <div class="roster-stats">
+                  <h4>9</h4>
+                  <p>matches</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Matches -->
+          <div class="esports-panel">
+            <div class="esports-panel-header">
+              <div class="esports-panel-title">
+                <h2>Upcoming Matches</h2>
+                <p>Next 60 days</p>
+              </div>
+            </div>
+            <div class="matches-timeline">
+              <div class="match-item">
+                <div class="match-date">Jun<br>21</div>
+                <div class="match-divider"><div class="match-dot" style="background:#f04a50;"></div></div>
+                <div class="match-details">
+                  <h4>vs Cyber Titans &mdash; Ignition Masters <span class="match-tag tag-urgent">Urgent</span></h4>
+                  <p>Shadow Reapers</p>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="match-date">Jun<br>25</div>
+                <div class="match-divider"><div class="match-dot" style="background:#8e62f5;"></div></div>
+                <div class="match-details">
+                  <h4>vs Rift Kings &mdash; Group Stage</h4>
+                  <p>Neon Warriors</p>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="match-date">Jul<br>2</div>
+                <div class="match-divider"><div class="match-dot" style="background:#8e62f5;"></div></div>
+                <div class="match-details">
+                  <h4>vs Apex Wolves &mdash; Series Decider</h4>
+                  <p>Phantom Vanguard</p>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="match-date">Aug<br>05</div>
+                <div class="match-divider"><div class="match-dot" style="background:#8e62f5;"></div></div>
+                <div class="match-details">
+                  <h4>Overdrive Quals Final</h4>
+                  <p>Cyber Titans</p>
+                </div>
+              </div>
+              <div class="match-item">
+                <div class="match-date">Jun<br>14</div>
+                <div class="match-divider"><div class="match-dot" style="background:#00d26a;"></div></div>
+                <div class="match-details">
+                  <h4>Ignition Masters &mdash; Trophy Lift <span class="match-tag tag-done">Done</span></h4>
+                  <p>Shadow Reapers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Roster Mix Chart -->
+          <div class="esports-panel">
+            <div class="esports-panel-header">
+              <div class="esports-panel-title">
+                <h2>Roster Mix</h2>
+                <p>By game</p>
+              </div>
+            </div>
+            <div class="roster-mix-chart">
+              <div class="donut-circle">
+                <div class="donut-inner">
+                  <h3>26</h3>
+                  <p>Players</p>
+                </div>
+              </div>
+            </div>
+            <ul class="roster-legend">
+              <li>
+                <div class="legend-label"><div class="legend-dot" style="background:#f04a50;"></div> VALORANT</div>
+                <span>8</span>
+              </li>
+              <li>
+                <div class="legend-label"><div class="legend-dot" style="background:#f29900;"></div> CS2</div>
+                <span>7</span>
+              </li>
+              <li>
+                <div class="legend-label"><div class="legend-dot" style="background:#fbbc04;"></div> League</div>
+                <span>6</span>
+              </li>
+              <li>
+                <div class="legend-label"><div class="legend-dot" style="background:#8e62f5;"></div> Dota 2</div>
+                <span>5</span>
+              </li>
+            </ul>
+          </div>
+
         </div>
+
       </div>
       
     </main>

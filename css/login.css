@@ -263,6 +263,27 @@ body, html {
     width: 100%;
   }
   .login-left {
-    padding: 80px 20px;
+    padding: 60px 20px;
+  }
+  .left-content h1 {
+    font-size: 3rem;
+  }
+  .left-content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-right {
+    padding: 40px 20px;
+  }
+  .new-login-box {
+    padding: 30px 20px;
+  }
+  .new-login-box h2 {
+    font-size: 1.5rem;
+  }
+  .social-login {
+    flex-direction: column;
   }
 }

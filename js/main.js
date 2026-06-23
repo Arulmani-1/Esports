@@ -109,6 +109,30 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.addEventListener('click', () => sidebar.classList.add('active'));
       closeBtn.addEventListener('click', () => sidebar.classList.remove('active'));
     }
+
+    // MOBILE SIDEBAR DROPDOWNS
+    const mobileDropdownToggles = document.querySelectorAll('.mobile-sidebar li > a');
+    mobileDropdownToggles.forEach(toggle => {
+      const dropdown = toggle.nextElementSibling;
+      if (dropdown && dropdown.classList.contains('mobile-dropdown')) {
+        toggle.addEventListener('click', (e) => {
+          e.preventDefault(); // Prevent navigation
+          dropdown.classList.toggle('show');
+          
+          // Toggle the chevron icon if it exists
+          const icon = toggle.querySelector('i');
+          if (icon) {
+            if (dropdown.classList.contains('show')) {
+              icon.classList.remove('fa-chevron-down');
+              icon.classList.add('fa-chevron-up');
+            } else {
+              icon.classList.remove('fa-chevron-up');
+              icon.classList.add('fa-chevron-down');
+            }
+          }
+        });
+      }
+    });
   };
 
   // Run the loader
