@@ -71,16 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const initHeaderScripts = () => {
-    // Prevent hard reloads when clicking links pointing to the current page
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', (e) => {
-        const currentUrl = window.location.href.split('#')[0];
-        const linkUrl = link.href.split('#')[0];
-        if (currentUrl === linkUrl && !link.hasAttribute('download')) {
-          e.preventDefault();
-        }
-      });
-    });
+    // Removed preventDefault on same-page links to allow proper navigation testing
 
     // CUSTOM CURSOR HOVER EVENTS (re-bind for new header elements)
     const cursor = document.querySelector('.custom-cursor');

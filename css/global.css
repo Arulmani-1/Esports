@@ -138,14 +138,19 @@ header {
   align-items: center;
   z-index: 1000;
   transition: all 0.4s ease;
-  background: transparent;
+  background: rgba(17, 17, 17, 0.25);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 header.sticky {
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
+  background: rgba(17, 17, 17, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: var(--glass-border);
   padding: 15px 5%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -195,7 +200,10 @@ header.sticky {
   position: absolute;
   top: 100%;
   left: -20px;
-  background: #181818;
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-top: 2px solid #c8a97e;
   min-width: 240px;
   opacity: 0;
