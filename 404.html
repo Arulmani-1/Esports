@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esports Pro Arena | 404 Not Found</title>
-  
+  <title>Stackly | 404 Not Found</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Marcellus&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <link rel="stylesheet" href="css/loading.css">  <link rel="stylesheet" href="css/global.css">
+
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/404.css">
 </head>
+
 <body>
   <video class="page-bg-video" autoplay loop muted playsinline>
     <source src="assets/videos/vid_0.mp4" type="video/mp4">
@@ -23,15 +28,53 @@
 
   <!-- Full Global Header -->
   <header>
-  <a href="index.html" class="logo">
-    <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
-  </a>
-  <nav>
-    <ul class="nav-links">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="matches.html">Single Match</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="coming_soon.html">Coming Soon</a></li>
+            <li><a href="404.html">404 Error Page</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="all_forum.html">All Forum</a></li>
+            <li><a href="single_forum.html">Single Forum</a></li>
+            <li><a href="topic.html">Topic</a></li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li>
+          <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="shop.html">Products</a></li>
+          </ul>
+        </li>
+
+        <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <aside class="mobile-sidebar">
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <ul>
       <li><a href="index.html">Home</a></li>
       <li>
         <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
+        <ul class="mobile-dropdown">
           <li><a href="about.html">About Us</a></li>
           <li><a href="about_me.html">About Me</a></li>
           <li><a href="matches.html">Single Match</a></li>
@@ -42,44 +85,6 @@
       </li>
       <li>
         <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="all_forum.html">All Forum</a></li>
-          <li><a href="single_forum.html">Single Forum</a></li>
-          <li><a href="topic.html">Topic</a></li>
-        </ul>
-      </li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li>
-        <a href="index.html">Shop <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="shop.html">Products</a></li>
-        </ul>
-      </li>
-
-      <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
-    </ul>
-    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-  </nav>
-</header>
-
-<aside class="mobile-sidebar">
-  <div class="close-btn"><i class="fas fa-times"></i></div>
-      <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="index.html">Pages <i class="fas fa-chevron-down"></i></a>
-        <ul class="mobile-dropdown">
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="about_me.html">About Me</a></li>
-          <li><a href="matches.html">Single Match</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="coming_soon.html">Coming Soon</a></li>
-          <li><a href="404.html">404 Error Page</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="index.html">Forum <i class="fas fa-chevron-down"></i></a>
         <ul class="mobile-dropdown">
           <li><a href="all_forum.html">All Forum</a></li>
           <li><a href="single_forum.html">Single Forum</a></li>
@@ -96,7 +101,7 @@
       </li>
       <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
     </ul>
-</aside>
+  </aside>
 
 
   <section class="error-page">
@@ -104,15 +109,16 @@
     <div class="error-content">
       <h1 class="error-number">404</h1>
       <h2 class="error-subtitle">Go Back To The Shadow!</h2>
-      
+
       <div class="ornate-separator">
         <div class="diamond"></div>
         <div class="diamond main"></div>
         <div class="diamond"></div>
       </div>
 
-      <p class="error-desc">The page you are looking for no longer exists. Perhaps you can return back to the site's<br>homepage and see if you can find what you are looking for.</p>
-      
+      <p class="error-desc">The page you are looking for no longer exists. Perhaps you can return back to the
+        site's<br>homepage and see if you can find what you are looking for.</p>
+
       <div style="display: flex; gap: 20px; justify-content: center;">
         <a href="javascript:history.back()" class="btn error-btn">GO BACK</a>
         <a href="index.html" class="btn error-btn">GO TO DASHBOARD</a>
@@ -122,46 +128,47 @@
 
   <!-- Global Footer -->
   <footer>
-  <div class="footer-grid">
-    <div class="footer-col">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
-      </a>
-      <p style="margin-top:20px;">The premier destination for competitive gaming and esports tournaments.</p>
-      <div class="social-links">
-        <a href="404.html"><i class="fab fa-twitter"></i></a>
-        <a href="404.html"><i class="fab fa-twitch"></i></a>
-        <a href="404.html"><i class="fab fa-youtube"></i></a>
-        <a href="404.html"><i class="fab fa-discord"></i></a>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Stackly Logo" class="logo-img">
+        </a>
+        <p style="margin-top:20px;">The premier destination for competitive gaming and esports tournaments.</p>
+        <div class="social-links">
+          <a href="404.html"><i class="fab fa-twitter"></i></a>
+          <a href="404.html"><i class="fab fa-twitch"></i></a>
+          <a href="404.html"><i class="fab fa-youtube"></i></a>
+          <a href="404.html"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="index.html">Shop</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.html">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="tournaments.html">Tournaments</a></li>
-        <li><a href="teams.html">Teams</a></li>
-        <li><a href="index.html">Shop</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Stackly. All Rights Reserved.</p>
     </div>
-    <div class="footer-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="index.html">FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Stackly. All Rights Reserved.</p>
-  </div>
-</footer>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <!-- Global JS -->
-  <script src="js/loading.js"></script>  <script src="js/main.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/main.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -181,5 +188,5 @@
     });
   </script>
 </body>
-</html>
 
+</html>
